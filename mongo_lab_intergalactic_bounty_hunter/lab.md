@@ -165,4 +165,3 @@ Find the [INTERMEDIATE_MONGO.md lecture notes](https://git.generalassemb.ly/seir
 * Upserts will insert a value if it doesn't exist, if it does it will update it
 * Try giving a new field of `lastSeen` to Han Solo, with the property `yesterday` set upsert to true
 * Try giving all bounties a new field of `lastSeen` - with a value of `last week` and set upsert to `false`
-*
