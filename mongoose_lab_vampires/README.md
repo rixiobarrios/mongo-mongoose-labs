@@ -121,7 +121,6 @@ Select all the vampires that:
 1. love either frilly shirtsleeves or frilly collars
 2. love brooding
 3. love at least one of the following: appearing innocent, trickery, lurking in rotting mansions, R&B music
-4. love fancy cloaks but not if they also love either top hats or virgin blood _ Hint-You will also have to use \$nin _
 
 ### Negative Selection
 
