@@ -18,7 +18,7 @@ module.exports = [
       "Winona Ryder",
       "top hats",
       "fancy cloaks",
-      "handlebar   mustaches"
+      "handlebar mustaches"
     ],
     location: "Transylvania, Romania",
     gender: "m",
@@ -42,7 +42,7 @@ module.exports = [
     loves: [
       "frilly shirtsleeves",
       "frilly collars",
-      "lurking in   rotting mansions",
+      "lurking in rotting mansions",
       "Louis"
     ],
     location: "Auvergne, France",
@@ -54,7 +54,7 @@ module.exports = [
     dob: new Date(1766, 6, 4, 2, 1),
     hair_color: "brown",
     eye_color: "blue",
-    loves: ["brooding", "Claudia", "staring longingly into the   distance"],
+    loves: ["brooding", "Claudia", "staring longingly into the distance"],
     location: "New Orleans, Louisiana, US",
     gender: "m",
     victims: 150
@@ -64,7 +64,7 @@ module.exports = [
     dob: new Date(1793, 2, 7, 8, 30),
     hair_color: "blonde",
     eye_color: "blue",
-    loves: ["doll babies", "ribbons", "appearing innocent", "  trickery"],
+    loves: ["doll babies", "ribbons", "appearing innocent", "trickery"],
     location: "New Orleans, Louisiana, US",
     gender: "f",
     victims: 290
@@ -97,7 +97,7 @@ module.exports = [
     loves: [
       "eating hearts",
       "bathing in roses",
-      "elaborate   headdresses",
+      "elaborate headdresses",
       "R&B music"
     ],
     location: "Kemet, Egypt",
@@ -110,7 +110,7 @@ module.exports = [
     dob: new Date(1901, 6, 20, 0, 57),
     hair_color: "brown",
     eye_color: "brown",
-    loves: ["brooding", "diamond skin", "calling people spider   monkeys"],
+    loves: ["brooding", "diamond skin", "calling people spider monkeys"],
     location: "Chicago, Illinois, US",
     gender: "m"
   },
