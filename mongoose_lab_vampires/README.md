@@ -2,7 +2,7 @@ Title: Mongoose Vampires<br>
 Type: Lab<br>
 Duration: 1 + hours <br>
 Creator: WDI-Meeseeks <br>
-Adapted by: Kristyn Bryan, Karolin Rafalski<br>
+Adapted by: Hou Chia, Kristyn Bryan, Karolin Rafalski<br>
 
 ---
 
@@ -24,7 +24,7 @@ Utilize the following resources to research the commands you will need:
 
 1. Start your mongo server with `mongod` in terminal
 1. navigate to this directory in terminal and `npm i` to install `mongoose`
-1. open the project in atom, you'll be working with some starter code in the `models` folder and the `app.js` file
+1. open the project in vscode, you'll be working with some starter code in the `models` folder and the `app.js` file
 
 # The Exercise
 
