@@ -150,30 +150,3 @@ Select all vampires that:
 1. Remove a single document wherein the hair_color is 'brown'
 2. We found out that the vampires with the blue eyes were just fakes! Let's remove all the vampires who have blue eyes from our database.
    <hr>
-
-## Hungry for more
-
-1. Check out Mongoose's Query Builder!
-
-```js
-Person.find({ occupation: /host/ })
-  .where("name.last")
-  .equals("Ghost")
-  .where("age")
-  .gt(17)
-  .lt(66)
-  .where("likes")
-  .in(["vaporizing", "talking"])
-  .limit(10)
-  .sort("-occupation")
-  .select("name occupation")
-  .exec(callback);
-```
-
-1. Write what that does in English: `Find a person whose occupation is ...`
-
-2. Make an index route that will res.send the json of all the data in our database.
-
-3. If number 1 was easy, try to connect your database to your application and show a proper index page that displays your vampire data. If this is also easy, create a show page as well where you are showing individual vampire data.
-
-4. Have extra time? Try out a few more problems on [CodeWars](https://www.codewars.com/)
