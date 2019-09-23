@@ -17,14 +17,30 @@ For this lab, you will be using some of the mongoose commands that you learned t
 Utilize the following resources to research the commands you will need:
 
 - Your notes from today
-- Mongoose Documentation
+- [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
 - Google to find Stack Overflow articles and more
 
 # Setup
 
 1. Start your mongo server with `mongod` in terminal
-1. navigate to this directory in terminal and `npm i` to install `mongoose`
+1. navigate to this directory in terminal and `npm i --save mongoose` to install `mongoose`
 1. open the project in vscode, you'll be working with some starter code in the `models` folder and the `app.js` file
+
+# What is a schema?
+
+A schema is a way to organize, ahead of time, what a group of data is going to look like. This can be at various levels of a database depending on what kind of databases you are using.
+
+Mongo, is schema-less on the database level. It doesn't care what the data looks like and will take in virtually anything as long as it's syntactically correct.
+
+## Why they are important?
+
+Even when you are using MongoDB, an inherently schema-less database, a schema can be very helpful. It helps control what is going into the database so that you can both know what is going into it, and to make validations. Note that with MongoDB, even if a piece of data is not a part of your original schema, you can still store it.
+
+## Mongoose
+
+This is where mongoose comes in. Instead of manually making sure everything we are putting into our database makes sense and conforms to some type of structure, Mongoose allows us to define schemas.
+
+Mongoose, in the background, can enforce these schemas (as strictly as you like) in order to make sense of the data going into the database and to allow validation. It provides powerful and simple to use tools to do this.
 
 # The Exercise
 
@@ -114,6 +130,52 @@ Select all the vampires that:
 3. have more than 1000 victims or love marshmallows
 4. have red hair or green eyes
 
+### Before you continue on to part two, you should know that Mongoose has some sweet helper functions that can make all this a little easier. See below.
+
+Mongoose's default find gives you an array of objects.  But what if you know you only want one object?  These convenience methods just give you one object without the usual array surrounding it.
+
+```javascript
+Article.findById('5757191bce5579b805705900', (err, article)=>{
+  console.log(article);
+});
+```
+```javascript
+Article.findOne({ author : 'Matt' }, (err, article)=>{
+  console.log(article);
+});
+```
+```javascript
+Article.findByIdAndUpdate(
+  '5757191bce5579b805705900', // id of what to update
+  { $set: { author: 'Matthew' } }, // how to update it
+  { new : true }, // tells findOneAndUpdate to return modified article, not the original
+  (err, article)=>{
+    console.log(article);
+  });
+});
+```
+```javascript
+Article.findOneAndUpdate(
+  { author: 'Matt' }, // search criteria of what to update
+  { $set: { author: 'Matthew' } }, // how to update it
+  { new : true }, // tells findOneAndUpdate to return modified article, not the original
+  (err, article)=>{
+    console.log(article);
+  });
+});
+```
+```javascript
+Article.findByIdAndRemove('5757191bce5579b805705900', (err, article)=>{
+  console.log(article); // log article that was removed
+});
+```
+```javascript
+
+Article.findOneAndRemove({ author : 'Matt' }, (err, article)=>{
+  console.log(article); // log article that was removed
+});
+```
+
 ### Select objects that match one of several values
 
 Select all the vampires that:
@@ -138,12 +200,9 @@ Select all vampires that:
 
 ## Update
 
-1. Update 'Guy Man' to have a gender of 'f'
-2. Update 'Eve' to have a gender of 'm'
-3. Update 'Guy Man' to have an array called 'hates' that includes 'clothes' and 'jobs'
-4. Update 'Guy Man's' hates array also to include 'alarm clocks' and 'jackalopes'
-5. Rename 'Eve's' name field to 'moniker'
-6. We now no longer want to categorize female gender as "f", but rather as **fems**. Update all females so that the they are of gender "fems".
+1. Update 'Eve' to have a gender of 'm'
+2. Rename 'Eve's' name field to 'moniker'
+3. We now no longer want to categorize female gender as "f", but rather as **fems**. Update all females so that the they are of gender "fems".
 
 ## Remove
 
