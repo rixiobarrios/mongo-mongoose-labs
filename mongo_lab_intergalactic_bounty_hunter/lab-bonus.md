@@ -91,4 +91,4 @@
    	salary: 165}]);
    ```
 
-1. Find the [INTERMEDIATE_MONGO.md](https://git.generalassemb.ly/seir-826/w05d02-intro-to-mongo-mongoose/blob/master/advanced_mongo/2.intermediate_mongo.md) lecture notes in the instructor notes directory. Follow through each of the explanations. Follow the commands and perform appropriate finds after each update call to see the results
+1. Find the [INTERMEDIATE_MONGO.md](https://git.generalassemb.ly/seir-129/intro-to-mongo-mongoose/blob/master/advanced_mongo/2.intermediate_mongo.md) lecture notes in the instructor notes directory. Follow through each of the explanations. Follow the commands and perform appropriate finds after each update call to see the results

@@ -1,11 +1,3 @@
-Title: Mongoose Vampires<br>
-Type: Lab<br>
-Duration: 1 + hours <br>
-Creator: WDI-Meeseeks <br>
-Adapted by: Hou Chia, Kristyn Bryan, Karolin Rafalski<br>
-
----
-
 # Mongoose Vampires
 
 For this lab, you will be using some of the mongoose commands that you learned today and you will be **reading the documents** to find **new** queries to complete the following activities. Researching queries and implementing them is a big part of this lab!
@@ -22,9 +14,8 @@ Utilize the following resources to research the commands you will need:
 
 # Setup
 
-1. Start your mongo server with `mongod` in terminal
-1. navigate to this directory in terminal and `npm i --save mongoose` to install `mongoose`
-1. open the project in vscode, you'll be working with some starter code in the `models` folder and the `app.js` file
+1. Navigate to this directory in terminal and `npm i --save mongoose` to install `mongoose`
+1. Open the project in vscode, you'll be working with some starter code in the `models` folder and the `app.js` file
 
 # What is a schema?
 

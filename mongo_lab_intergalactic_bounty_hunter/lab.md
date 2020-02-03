@@ -1,9 +1,6 @@
 # Mongo Lab
 
-Title: Intergalactic Bounty Hunter Database - Mongo Lab<br>
-Type:Lab<br>
-Duration: 1 + hours <br>
-Creator: Karolin Rafalski <br>
+Here's your opportunity to practice what you learned about Mongo!
 
 ## Intergalactic Bounty Hunter Database
 
@@ -17,7 +14,7 @@ You look around, notice some high end coffee and tea machines, an air hockey tab
 
 ## Set up
 
-Start `Mongo`, by typing `mongod`, if you don't already have it running.
+Start `Mongo`, if you don't already have it running.
 
 Open a new tab and start a Mongo shell if you don't have it running by typing `mongo`
 
@@ -148,7 +145,7 @@ Update Rocket's ship to be `The Milano 2`
 
 ### Intermediate Mongo
 
-Find the [INTERMEDIATE_MONGO.md lecture notes](https://git.generalassemb.ly/seir-826/w05d02-intro-to-mongo-mongoose/blob/master/advanced_mongo/2.intermediate_mongo.md). Follow through each of the explanations. Follow the commands and perform appropriate finds after each update call to see the results
+Find the [INTERMEDIATE_MONGO.md lecture notes](https://git.generalassemb.ly/seir-129/intro-to-mongo-mongoose/blob/master/advanced_mongo/2.intermediate_mongo.md). Follow through each of the explanations. Follow the commands and perform appropriate finds after each update call to see the results
 
 - Find the bounties that are greater than `100000`
 - Find the bounties that are less than `40000`
